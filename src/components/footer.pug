@@ -1,3 +1,22 @@
 mixin footer()
     footer.footer   
-        p footer
+        .footer__body.container
+            .footer__left
+                a(href="#!").footer__logo 
+                    img(src="@img/logo-dark.svg", alt="" draggable="false") 
+                a(href="#!").footer__btn Закзать обратный звонок 
+            .footer__mid
+                p.footer__copy © 2022 ООО «КВАНТА». ВСЕ ПРАВА ЗАЩИЩЕНЫ.
+                ul.footer__list.center 
+                    li.footer__li 
+                        a(href="#!").footer__link ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+                    li.footer__li 
+                        a(href="#!").footer__link ПУБЛИЧНАЯ ОФЕРТА
+            .footer__right 
+                ul.footer__list 
+                    li.footer__li 
+                        a(href="#!").footer__link ЭЛЕКТРОМОБИЛИ 
+                    li.footer__li 
+                        a(href="#!").footer__link АКСЕССУАРЫ 
+                    li.footer__li 
+                        a(href="#!").footer__link КОНТАКТЫ 

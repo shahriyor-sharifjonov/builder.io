@@ -259,13 +259,10 @@ button{
     }
     &__title{
         font-weight: 700;
-        font-size: 64px;
+        font-size: 46px;
         line-height: 120%;
         color: #F84435;
         margin-bottom: 33px;
-        @include media(1920){
-            font-size: 46px;
-        }
         @include media(1400){
             font-size: 40px;
         }
@@ -276,12 +273,9 @@ button{
     }
     &__p{
         font-weight: 500;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 140%;
         color: #000000; 
-        @include media(1920){
-            font-size: 26px;
-        }
         @include media(576){
             font-size: 20px;
         }
@@ -324,13 +318,9 @@ button{
         }
         &-p{
             font-weight: 500;
-            font-size: 36px;
-            line-height: 49px;
+            font-size: 24px;
+            line-height: 140%;
             color: #000000;   
-            @include media(1920){
-                font-size: 24px;
-                line-height: 140%;
-            }
             @include media(576){
                 font-size: 18px;
             }
@@ -369,6 +359,7 @@ button{
             font-size: 24px;
             line-height: 32px;
             color: #000000;
+            cursor: pointer;
             @include media(576){
                 padding: 17px 35px 17px 0;
                 font-size: 18px;
@@ -456,6 +447,77 @@ button{
                     }
                 }
             }
+        }
+    }
+}
+.tech{
+    margin-bottom: 150px;
+    @include media(576){
+        margin-bottom: 80px;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+        @include media(1400){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include media(576){
+            gap: 40px;
+        }
+    }
+    &__content{
+        width: 54%;
+        @include media(1400){
+            width: 100%;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        margin-bottom: 40px;
+        color: #F84435;
+        @include media(576){
+            font-size: 34px;
+            line-height: 120%;
+        }
+    }
+    &__img{
+        width: 46%;
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(1400){
+            width: 100%;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        p{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #000000;
+            @include media(768){
+                font-size: 18px;
+                line-height: 120%;
+            }
+        }
+        &-right{
+            white-space: nowrap;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 15px;
         }
     }
 }
