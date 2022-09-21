@@ -1,1 +1,65 @@
-// Шапка
+.header{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+        @include media(992){
+            gap: 20px;
+        }
+    }
+    &__logo{
+        img{
+            width: 100%;
+        }
+        @include media(576){
+            width: 150px;
+        }
+    }
+    &__tel{
+        text-decoration: none;
+        svg{
+            display: none;      
+            @include media(992){
+                display: block;
+            }
+        }
+        span{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: #F84435;  
+            font-family: 'Montserrat', sans-serif; 
+            @include media(1400){
+                font-size: 20px;    
+            }         
+            @include media(992){
+                display: none;
+            }
+        }
+    }
+    &__btn{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        color: #fff;
+        background: #F84435;
+        border-radius: 10px;
+        padding: 9px 16px;
+        @include media(576){
+            display: none;
+        }
+    }
+}
